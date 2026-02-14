@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Be My Valentine 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="memorial.css">
+    <!-- Romantic font (for the letter page) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="memorial.css" />
+</head>
+</head>
+<body>
+
+  
+
+<div id="main">
+    <h1>Hey…</h1>
+    <p style="font-size: 1.5rem; color: #d11d53; margin-bottom: 10px;">I made something for you 🌷</p>
+    <p style="font-size: 1.5rem; color: #d11d53; margin-bottom: 10px;">Wanna see it? 👀 </p>
+    <div class="button-row">
+      <button id="yes">Yes 💖</button>
+      <button id="no">No 🙈</button>
+    </div>
+  </div>
+
+  <div id="intermission" style="display: none;">
+    <div class="card-content">
+      <div class="heart-icon">❤️</div>
+      <h2>I’m really happy you’re here </h2>
+      
+      <div class="message-body">
+        <p>You just made this moment a little more beautiful</p>
+        <p></p>
+        <p></p>
+        <p>And I’m really glad it’s with you 👀</p>
+      </div>
+     
+      <button id="proceedBtn">Click Here... </button>
+    </div>
+  </div>
+
+  <div id="memorial">
+    <div class="overlay"></div>
+    <div class="memorial-container">
+      <div class="media-row">
+        <div id="photoRow"></div>
+        <video id="videoRow" playsinline webkit-playsinline muted loop></video>
+      </div>
+      <div class="letter-container">
+        <p id="letter"></p>
+      </div>
+    </div>
+    <audio id="bgMusic" src="assets/music.mp3" preload="auto"></audio>
+
+<script>
+  const bgMusic = document.getElementById("bgMusic");
+  bgMusic.volume = 0.3; // 30% volume
+</script>
+
+    
+    <a href="assets/ticket.pdf" target="_blank" id="airlineLink" class="hidden-pop">
+        <span class="icon">💌</span>
+        <span class="text">Click Here When You’re Ready</span>
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
